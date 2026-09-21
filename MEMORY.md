@@ -59,6 +59,11 @@
   искажает кириллицу в аргументах; read-вывод может показать «Смертей» вместо «Смерти» — проверять
   codePoint'ами). Диагностические скрипты удалены; shot.mjs оставлен + свежие скриншоты
   shot-falling/landed/pile.png (финальная сборка) — юзер открывает PNG для визуальной проверки.
+- ✅ Игра в проде (2026-09-21): репо github.com/l10yd/humanthrower-game (public, main) +
+  Vercel-проект warl10yd/humanthrower-game → https://humanthrower-game.vercel.app
+  (git connect — пуш main = авто-деплой + алиас сам). На gosugames.online: slug
+  `humanthrower`, status live, DROP-полка new_drop[0]+fleet[0], постер
+  gosu/public/games/humanthrower.svg. Пайплайн выпуска — gosu/docs/deploy-game.md.
 
 ## Уроки
 - `page.evaluate` не сериализует функции — debug-хуки вызывать строго внутри evaluate.
@@ -81,5 +86,4 @@
 - head-hit стан не пойман пробой (стохастично — человечек не упал на голову) — код в месте,
   логика прямая; проверить вживую: фигурка на голову → 2.2с рэгдолл-режим.
 - Мобильные тач-кнопки показываются только на touch-устройствах — проверить на телефоне.
-- git commit (репо инициализировано, `git init -b main`; коммит после финального ревью юзера).
-- Публикация в витрину gosu (реестр + постер) — отдельный заход по ритуалу витрины.
+- postMessage-мост gosu (docs/score-protocol.md) — счёт забегов в кабинет игрока; не делался.
