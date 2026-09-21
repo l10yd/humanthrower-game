@@ -1,0 +1,28 @@
+{
+  "name": "humanthrower",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "HUMAN THROWER - physics-based ragdoll / falling-body / row-clearing arcade game. You control the human who survives underneath the falling ones.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test"
+  },
+  "dependencies": {
+    "@dimforge/rapier2d-compat": "^0.14.0",
+    "pixi.js": "^8.6.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
